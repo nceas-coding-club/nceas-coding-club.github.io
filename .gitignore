@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # Moving quarto gitignore file to here
 /.quarto/
+
+# Add R project file
+*.Rproj
