@@ -4,23 +4,30 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## X
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Personal Website -- <img src="images/github_logo.png" width="2%"/> GitHub Profile -- <img src="images/twitter_logo.png" width="2%"/> Twitter / Social Media Profile -- **Email**
 
-## Running Code
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+The gray logos allow them to be visible in both light and dark mode (if we decide to go that road)
 
-```{r}
-1 + 1
-```
 
-You can add options to executable code like this
+## Y
 
-```{r}
-#| echo: false
-2 * 2
-```
+Personal Website -- <img src="images/github_logo.png" width="2%"/> GitHub Profile -- <img src="images/twitter_logo.png" width="2%"/> Twitter / Social Media Profile -- **Email**
 
-The `echo: false` option disables the printing of code (only output is displayed).
+
+## Z
+
+Personal Website -- <img src="images/github_logo.png" width="2%"/> GitHub Profile -- <img src="images/twitter_logo.png" width="2%"/> Twitter / Social Media Profile -- **Email**
+
+
+
+
+## Nick Lyon
+
+[njlyon0.github.io](https://njlyon0.github.io/) -- <img src="images/github_logo.png" width="2%"/> [njlyon0](https://github.com/njlyon0) -- <img src="images/twitter_logo.png" width="2%"/> [\@scilyon](https://twitter.com/scilyon) -- **lyon@nceas.ucsb.edu**
+
+<img src="images/nlyon.png" align="right" width="25%"/>
+
+Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
