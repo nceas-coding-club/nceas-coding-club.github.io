@@ -31,3 +31,5 @@ Personal Website -- <img src="images/github_logo.png" width="2%"/> GitHub Profil
 <img src="images/nlyon.png" align="right" width="25%"/>
 
 Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
+
+**Goals:** Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages.
