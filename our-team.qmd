@@ -41,3 +41,17 @@ Althea is a Data Science Fellow at the Arctic Data Center data repository. She i
 -   Work collaboratively with many people using git/github
 -   Learn how to create a webpage populated by a different github repo
 -   Dig deeper into Quarto formatting
+
+## Camila Vargas Poulsen
+
+<img src="images/github_logo.png" width="2%"/> [camilavargasp](https://github.com/camilavargasp) -- <img src="images/twitter_logo.png" width="2%"/> [\@CamVargasP](https://twitter.com/CamVargasP) -- **camilavargas\@ucsb.edu**
+
+<img src="images/cvargas.jpeg" width="25%" align="right"/>
+
+Camila is working towards building the [Palmyra Atoll Data Library (PADL)](https://github.com/padl-project). She serves as the data manager, rescuing data collected at Palmyra Atoll to document and publish these data packages into the Environmental Data Initiative repository (EDI). As a data and project manager, Camila enjoys developing efficient workflows for cleaning, organizing, and documenting data, making it ready to be analized and ensure long-term preservation. Camila holds a Masters in Environmental Science & Management from the Bren School at UCSB.
+
+**Data Science Tools:** RStudio and Github
+
+**data-science-chats goals:** Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.
+
+**Goals for this website:** Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work.
