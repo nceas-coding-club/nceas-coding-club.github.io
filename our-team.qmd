@@ -31,3 +31,7 @@ Nick focuses on supporting LTER synthesis working groups in the acquisition and 
 ## Althea Marks
 
 [theamarks](https://github.com/theamarks) <img src="images/github_logo.png" width="2%"/> -- **marks\@nceas.ucsb.edu**
+
+<img src="images/amarks.jpeg" width="25%" align="right"/>
+
+
