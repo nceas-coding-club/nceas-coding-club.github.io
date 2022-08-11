@@ -60,3 +60,5 @@ Haley is a Data Scientist at the National Center for Ecological Analysis and Syn
 <img src="images/virlar.jpeg" align="right" width="25%"/>
 
 Daphne helps curate metadata for every dataset submitted to the National Science Foundation's [Arctic Data Center](https://arcticdata.io/), the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne's background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master's degree from the Bren School of Environmental Science & Management.
+
+{{< fa bug >}}
