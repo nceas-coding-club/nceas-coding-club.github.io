@@ -51,8 +51,7 @@ Camila is working towards building the [Palmyra Atoll Data Library (PADL)](https
 
 Haley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.
 
-**Goals for this website:**
-Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
+**Goals for this website:** Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
 
 ## Daphne Virlar-Knight
 
@@ -60,4 +59,4 @@ Website goals include collaborating with others in Github, understanding and usi
 
 <img src="images/virlar.jpeg" align="right" width="25%"/>
 
-Daphne helps curate metadata for every dataset submitted to the National Science Foundation's [Arctic Data Center](https://arcticdata.io/), the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne's background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master's degree from the Bren School of Environmental Science & Management. 
+Daphne helps curate metadata for every dataset submitted to the National Science Foundation's [Arctic Data Center](https://arcticdata.io/), the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne's background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master's degree from the Bren School of Environmental Science & Management.
