@@ -53,3 +53,11 @@ Haley is a Data Scientist at the National Center for Ecological Analysis and Syn
 
 **Goals for this website:**
 Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
+
+## Daphne Virlar-Knight
+
+[dvirlar.com](https://dvirlar.com) -- <img src="images/github_logo.png" width="2%"/> [dvirlar2](https://github.com/dvirlar2) -- <img src="images/twitter_logo.png" width="2%"/> [\@dvirlar2](https://twitter.com/dvirlar2) -- **virlar-knight\@nceas.ucsb.edu**
+
+<img src="images/virlar.jpeg" align="right" width="25%"/>
+
+Daphne helps curate metadata for every dataset submitted to the National Science Foundation's [Arctic Data Center](https://arcticdata.io/), the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne's background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master's degree from the Bren School of Environmental Science & Management. 
