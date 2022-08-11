@@ -4,28 +4,28 @@
     "href": "our-team.html",
     "title": "Our Team",
     "section": "",
-    "text": "Personal Website –  GitHub Profile –  Twitter / Social Media Profile – Email\nThe gray logos allow them to be visible in both light and dark mode (if we decide to go that road)"
+    "text": "njlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking “raw” field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University\nGoals: Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages."
   },
   {
-    "objectID": "our-team.html#y",
-    "href": "our-team.html#y",
+    "objectID": "our-team.html#althea-marks",
+    "href": "our-team.html#althea-marks",
     "title": "Our Team",
-    "section": "Y",
-    "text": "Y\nPersonal Website –  GitHub Profile –  Twitter / Social Media Profile – Email"
+    "section": "Althea Marks",
+    "text": "Althea Marks\ntheamarks  – marks@nceas.ucsb.edu\n\nAlthea is a Data Science Fellow at the Arctic Data Center data repository. She is working on the “scythe” R package to improve the process of searching for dataset citations in scientific publication databases. Althea comes from an environmental science, water quality, and marine ecology background; she got the reproducible and open science bug while analyzing her graduate research and teaching herself to code.\nGoals for this website:\n\nWork collaboratively with many people using git/github\nLearn how to create a webpage populated by a different github repo\nDig deeper into Quarto formatting\nUse git in the command line for this website"
   },
   {
-    "objectID": "our-team.html#z",
-    "href": "our-team.html#z",
+    "objectID": "our-team.html#camila-vargas-poulsen",
+    "href": "our-team.html#camila-vargas-poulsen",
     "title": "Our Team",
-    "section": "Z",
-    "text": "Z\nPersonal Website –  GitHub Profile –  Twitter / Social Media Profile – Email"
+    "section": "Camila Vargas Poulsen",
+    "text": "Camila Vargas Poulsen\n camilavargasp –  @CamVargasP – camilavargas@ucsb.edu\n\nCamila is working towards building the Palmyra Atoll Data Library (PADL). She serves as the data manager, rescuing data collected at Palmyra Atoll to document and publish these data packages into the Environmental Data Initiative repository (EDI). As a data and project manager, Camila enjoys developing efficient workflows for cleaning, organizing, and documenting data, making it ready to be analized and ensure long-term preservation. Camila holds a Masters in Environmental Science & Management from the Bren School at UCSB.\nData Science Tools: RStudio and Github\ndata-science-chats goals: Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.\nGoals for this website: Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work."
   },
   {
-    "objectID": "our-team.html#nick-lyon",
-    "href": "our-team.html#nick-lyon",
+    "objectID": "our-team.html#haley-epperly-fox",
+    "href": "our-team.html#haley-epperly-fox",
     "title": "Our Team",
-    "section": "Nick Lyon",
-    "text": "Nick Lyon\nnjlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking “raw” field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University\nGoals: Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages."
+    "section": "Haley (Epperly) Fox",
+    "text": "Haley (Epperly) Fox\nhaleyepperlyfox  – epperly@nceas.ucsb.edu\n\nHaley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.\nGoals for this website: Website goals include collaborating with others in Github, understanding and using more of Github’s capabilities, using the terminal to interact with Github, and learning more about Quarto’s capabilities."
   },
   {
     "objectID": "index.html",
