@@ -41,6 +41,7 @@ Althea is a Data Science Fellow at the Arctic Data Center data repository. She i
 -   Work collaboratively with many people using git/github
 -   Learn how to create a webpage populated by a different github repo
 -   Dig deeper into Quarto formatting
+-   Use git in the command line for this website
 
 ## Camila Vargas Poulsen
 
