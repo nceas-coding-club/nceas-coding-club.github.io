@@ -36,4 +36,8 @@ Nick focuses on supporting LTER synthesis working groups in the acquisition and 
 
 Althea is a Data Science Fellow at the Arctic Data Center data repository. She is working on the "scythe" R package to improve the process of searching for dataset citations in scientific publication databases. Althea comes from an environmental science, water quality, and marine ecology background; she got the reproducible and open science bug while analyzing her graduate research and teaching herself to code.
 
+**Goals for this website:**
 
+-   Work collaboratively with many people using git/github
+-   Learn how to create a webpage populated by a different github repo
+-   Dig deeper into Quarto formatting
