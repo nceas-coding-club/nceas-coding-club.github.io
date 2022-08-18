@@ -32,7 +32,7 @@
     "href": "our-team.html#daphne-virlar-knight",
     "title": "Our Team",
     "section": "Daphne Virlar-Knight",
-    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management.\n{{< fa bug >}}"
+    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management."
   },
   {
     "objectID": "our-team.html#angel-chen",
@@ -47,13 +47,6 @@
     "title": "mysite",
     "section": "",
     "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "data_recipe.html",
