@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "NCEAS Data Science Chats"
   navbar:
     background: primary
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - data_bytes.qmd
+      - data_recipe.qmd
       - our-team.qmd
 
 format:
