@@ -28,6 +28,20 @@
     "text": "Haley (Epperly) Fox\nhaleyepperlyfox  – epperly@nceas.ucsb.edu\n\nHaley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.\nGoals for this website: Website goals include collaborating with others in Github, understanding and using more of Github’s capabilities, using the terminal to interact with Github, and learning more about Quarto’s capabilities."
   },
   {
+    "objectID": "our-team.html#daphne-virlar-knight",
+    "href": "our-team.html#daphne-virlar-knight",
+    "title": "Our Team",
+    "section": "Daphne Virlar-Knight",
+    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management."
+  },
+  {
+    "objectID": "our-team.html#angel-chen",
+    "href": "our-team.html#angel-chen",
+    "title": "Our Team",
+    "section": "Angel Chen",
+    "text": "Angel Chen\n angelchen7 – anchen@nceas.ucsb.edu\n\nAngel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.\nGoals for this website: Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "mysite",
@@ -40,12 +54,5 @@
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "our-team.html#daphne-virlar-knight",
-    "href": "our-team.html#daphne-virlar-knight",
-    "title": "Our Team",
-    "section": "Daphne Virlar-Knight",
-    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management.\n{{< fa bug >}}"
   }
 ]
