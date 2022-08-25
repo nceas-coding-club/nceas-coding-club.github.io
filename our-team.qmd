@@ -72,3 +72,15 @@ Daphne helps curate metadata for every dataset submitted to the National Science
 Angel supports [LTER](https://lternet.edu/) synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the [Arctic Data Center](https://arcticdata.io/), helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.
 
 **Goals for this website:** Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!
+
+## Samantha Csik
+
+[samanthacsik.github.io](https://samanthacsik.github.io/) -- <img src="images/github_logo.png" width="2%"/> [samanthacsik](https://github.com/samanthacsik) -- <img src="images/twitter_logo.png" width="2%"/> [\@SamanthaCsik](https://twitter.com/SamanthaCsik) -- [**scsik\@ucsb.edu**](mailto:scsik@ucsb.edu)
+
+<img src="images/scsik.jpg" width="25%" align="right"/>
+
+Sam is the NCEAS Data Training Coordinator where she's working to develop and teach data science training curricula for the [Master of Environmental Data Science (MEDS) program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) and other data science initiatives across NCEAS and UCSB. She is also a co-organizer of R-Ladies Santa Barbara, a local data science group which works to promote diversity in the R community. In her spare time, you'll typically find her hiking with her pup or cooking family dinners with friends.
+
+**data-science-chats goals:** Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space --- it's always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.
+
+**Goals for this website:** Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot --- trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line.
