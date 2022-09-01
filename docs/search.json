@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "data_bytes.html",
+    "href": "data_bytes.html",
+    "title": "Data Bytes",
+    "section": "",
+    "text": "Data Bytes are our idea for short, helpful coding tips and/or best practices. This page will grow as we add more Bytes so check in from time to time if you find the ones we have so far helpful! Got an idea for a new Data Byte? Post an Issue to share it with us and put it on our radar as a potential future Byte."
+  },
+  {
+    "objectID": "data_bytes.html#looping-through-non-numbers",
+    "href": "data_bytes.html#looping-through-non-numbers",
+    "title": "Data Bytes",
+    "section": "Looping through Non-Numbers",
+    "text": "Looping through Non-Numbers\nfor loops in R are a great way of repeating the same workflow iteratively rather than manually copy/pasting a given workflow for each case. for loops are so named because their syntax asks you for which groups you want to repeat the given workflow. The fundamental syntax is as follows:\n\n\n\n\n\n\nSyntax\n\n\n\n\nfor(single_group in all_groups){\n  ...workflow with each \"single_group\"...\n}\n\n\n\nIt is common to learn for loops by giving numbers to the for function and then conducting some sort of algebraic modification in the curly braces ({...}) after the for. For instance, we could square every number between 1 and 5 using a for loop.\n\n\n\n\n\n\nExample\n\n\n\n\nfor(j in 1:5){\n  # Square \"j\"\n  result <- j^2\n  # Print the result in each loop\n  print(result)\n}\n\n[1] 1\n[1] 4\n[1] 9\n[1] 16\n[1] 25\n\n\n\n\nIn each iteration of the loop above (i.e., for each value between 1 and 5), j becomes the next number in the provided sequence and squares it. At the end of the loop, your environment will have a value called j that is equal to 5 and an object called result that is equal to 25. This is because for loops only retain the final value of whatever passes through them. There are ways of adding each loop’s product to a single object so your output contains the results of all iterations of the loop but we will leave that for another time.\nWhile using numbers as the inputs for a for loop is great, many R users don’t realize that you can also use characters! This can be really useful if you have, for example, a dataset with many groups and you want to fit a linear regression for each level in your group column separately. To demonstrate this, we’ll use the penguins dataset included in the palmerpenguins R package.\nThe penguins dataset contains individual-level data on three penguin species (run ?penguins for more specific detail). Let’s say that we want to run compare the bill length between male and female penguins for each species. For simplicity’s sake, we’ll use a Student’s t-Test and extract only the p value.\n\n\n\n\n\n\nExample\n\n\n\n\n# Load the package\nlibrary(palmerpenguins)\n\n# For each species in the dataframe\nfor(sp in unique(penguins$species)){\n  \n  # Subset the data to the selected species and drop NAs in `sex`\n  data_sub <- subset(penguins, species == sp & !is.na(sex))\n  \n  # Now fit the t-test\n  stats <- t.test(data_sub$bill_length_mm ~ data_sub$sex)\n  \n  # And print the p-value!\n  message(\"For species \", sp, \" the p value is \", stats$p.value)\n}\n\nFor species Adelie the p value is 4.80108238442492e-15\n\n\nFor species Gentoo the p value is 1.31503894530191e-14\n\n\nFor species Chinstrap the p value is 8.91840858173204e-10\n\n\n\n\nThis can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a for loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!"
+  },
+  {
     "objectID": "our-team.html",
     "href": "our-team.html",
     "title": "Our Team",
