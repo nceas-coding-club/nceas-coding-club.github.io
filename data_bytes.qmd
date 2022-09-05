@@ -8,7 +8,9 @@ title: "Data Bytes"
 # `shelf::librarian` automatically installs missing packages and loads all packages. It also works for non-CRAN packages without needing to do the whole 'install `remotes` then `install_github`' thing
 
 # install.packages("librarian")
-librarian::shelf(palmerpenguins)
+librarian::shelf(palmerpenguins,
+                 tidyverse,
+                 ggsvg)
 ```
 
 ## Data Byte Explanation
@@ -72,6 +74,10 @@ for(sp in unique(penguins$species)){
 This can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a `for` loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!
 
 
+------------------------------------------------------------------------
 
+{{< include data_byte_sections/ggsvg.qmd >}}
+
+------------------------------------------------------------------------
 
 
