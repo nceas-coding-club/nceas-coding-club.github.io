@@ -1,8 +1,23 @@
 ---
-title: "Data Bytes"
+title: "Using Icons in Figures with {ggsvg}"
+author:
+  - name: "Haley Epperly Fox"
+    orcid: "0000-0001-6102-4784"
+
+abstract: "Learn how to insert icons into your plots using the `{ggsvg}` package."
+
+date: last-modified
+date-format: MMMM D, YYYY
+
+image: ../images/ggsvg-penguin.svg
+
+categories: graph aesthetics
+
+execute:
+  freeze: auto  # re-render only when source changes
 ---
 
-## Using Icons in Figures with {ggsvg}
+---
 
 Have you ever seen a figure with cute little icons representing data points and thought how you would love to recreate that? I'm here to tell you that you can and the `ggsvg` package makes it super simple.
 

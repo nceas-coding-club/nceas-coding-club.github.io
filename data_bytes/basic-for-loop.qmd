@@ -3,17 +3,25 @@ title: "Creating a Basic For Loop"
 author: 
   - name: "Daphne Virlar-Knight"
     orcid: "0000-0003-3708-6154"
+
+abstract: "Learn how to write a `for` loop when you're dealing with numeric values."
+
 date: last-modified
 date-format: MMMM D, YYYY
+
+image: ../images/basic-for-loop.png
+
+categories: iteration
+
 execute:
   freeze: auto  # re-render only when source changes
 ---
 
 ------------------------------------------------------------------------
 
-One of the key tenets of programming is the DRY principle: **D**on't **R**epeat **Y**ourself. Essentially, this boils down to not repeating your code ad nauseum to change only one or two things. This is particularly useful for computationally intensive workflows that would require changing tens or hundreds of items. For now, let's try a simple example to get a basic understanding of what a for loop is, and how to write one.
+One of the key tenets of programming is the DRY principle: **D**on't **R**epeat **Y**ourself. Essentially, this boils down to not repeating your code ad nauseum to change only one or two things. This is particularly useful for computationally intensive workflows that would require changing tens or hundreds of items. That's where the `for` loop comes into play.
 
-First, let's look at the basic syntax of a for loop. When you write a for loop, you're telling the computer "run this piece of code (`statement`) some number of times (`range_of_values`) in this spot (`value`)."
+First, let's look at the basic syntax of a `for` loop. When you write one, you're telling the computer "run this piece of code (`statement`) some number of times (`range_of_values`) in this spot (`value`)."
 
 ::: callout-tip
 #### Syntax
@@ -26,14 +34,14 @@ for(value in range_of_values){
 ```
 :::
 
-And that's it! Congratulations, now you know the syntax for a basic for loop! Now let's see it in practice. Now let's put it into practice. 
+And that's it! Congratulations, now you know the syntax for a basic `for` loop! Now let's see it in practice. Now let's put it into practice. 
 
 
 ::: callout-note
-Let's say Europe is experiencing a heat wave, but I'm not quite grasping the context of how bad it is because I'm not familiar with the Celsius temperature scale. I know the average temperatures are somewhere between 35-40&deg;C, so I'll write a quick function to convert the temperatures into Fahrenheit! But that spans over five numbers, and writing that function out five individual times goes against the DRY principle. This gives us the perfect excuse to write a for loop. 
+Let's say Europe is experiencing a heat wave, but I'm not quite grasping the context of how bad it is because I'm not familiar with the Celsius temperature scale. I know the average temperatures are somewhere between 35-40&deg;C, so I'll write a quick function to convert the temperatures into Fahrenheit! But that spans over five numbers, and writing that function out five individual times goes against the DRY principle. This gives us the perfect excuse to write a `for` loop. 
 
 The equation for converting temperatures from Celsius to Fahrenheit is the following. $$(deg C*1.8) + 32$$ 
-Knowing that conversion formula, here's how I'd write my for loop:
+Knowing that conversion formula, here's how I'd write my `for` loop:
 
 ```{r, eval = T}
 for(degC in 35:40){
@@ -49,4 +57,4 @@ for(degC in 35:40){
 Yep, that's pretty toasty! 
 :::
 
-For more help on for loops and other iterative processes, make sure to check out the [R for Data Science](https://r4ds.had.co.nz/iteration.html#iteration) book by Hadley Wickham and Garrett Grolemund!
+For more help on `for` loops and other iterative processes, make sure to check out the [R for Data Science](https://r4ds.had.co.nz/iteration.html#iteration) book by Hadley Wickham and Garrett Grolemund!
