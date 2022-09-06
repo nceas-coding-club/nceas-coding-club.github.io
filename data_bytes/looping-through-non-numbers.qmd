@@ -6,15 +6,12 @@ author:
 
 abstract: "How to write `for` loops when your sequence doesn't contain numeric values." 
 
-date: last-modified
+date: "Sep 1, 2022"
 date-format: MMMM D, YYYY
 
 image: ../images/looping-through-non-numbers.png
 
 categories: iteration
-
-execute:
-  freeze: auto  # re-render only when source changes
 ---
 
 ---

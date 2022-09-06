@@ -6,15 +6,12 @@ author:
 
 abstract: "Learn how to write a `for` loop when you're dealing with numeric values."
 
-date: last-modified
+date: "Sep 5, 2022"
 date-format: MMMM D, YYYY
 
 image: ../images/basic-for-loop.png
 
 categories: iteration
-
-execute:
-  freeze: auto  # re-render only when source changes
 ---
 
 ------------------------------------------------------------------------
