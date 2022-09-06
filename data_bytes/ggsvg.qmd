@@ -6,18 +6,16 @@ author:
 
 abstract: "Learn how to insert icons into your plots using the `{ggsvg}` package."
 
-date: last-modified
+date: Sep 5, 2022
 date-format: MMMM D, YYYY
 
 image: ../images/ggsvg-penguin.svg
 
 categories: graph aesthetics
-
-execute:
-  freeze: auto  # re-render only when source changes
+bibliography: references.bib
 ---
 
----
+------------------------------------------------------------------------
 
 Have you ever seen a figure with cute little icons representing data points and thought how you would love to recreate that? I'm here to tell you that you can and the `ggsvg` package makes it super simple.
 
@@ -29,30 +27,35 @@ All you have to do is:
 
 3.  Save the url for your chosen icon to read into your gpplot code
 
-4.  Use `geom_point_svg` in your ggplot code referencing your saved url
+4.  Use `geom_point_svg` in your ggplot code referencing your saved url [@ggsvg]
 
-Let's run through an example with the `palmerpenguins` dataset subset to only female Chinstrap penguins.
+Let's run through an example with the `palmerpenguins` dataset [@palmerpenguins]. Checkout the package [website](https://allisonhorst.github.io/palmerpenguins/) for some more info and fun artwork! We're going to subset these data to only include female Chinstrap penguins so that we have fewer data points to plot.
 
 ::: callout-note
 #### Example
 
 ```{r}
-#| label: plot
+#| label: load-libraries
+#| output: false
 
 # load libraries
 library(palmerpenguins)
 library(tidyverse)
 library(ggsvg)
+```
 
-# find the icon you want and save the url for later reference
+```{r}
+#| label: plot
+
+# find the icon you want and save the url for later reference following this format
 svg_url <- 'https://www.svgrepo.com/download/133788/penguin.svg'
 svg_txt <- paste(readLines(svg_url), collapse = "\n")
 
-# filter the penguin data
+# filter the penguin data to only female Chinstrap penguins
 chinstrap <- penguins %>% 
   filter(species == "Chinstrap", sex == "female")
 
-# plot the data with the icon used instead of points
+# plot the data with the selected icon used instead of points
 ggplot(chinstrap) + 
   geom_point_svg(aes(body_mass_g, flipper_length_mm), svg = svg_txt) + 
   labs(x = "Body Mass (g)", y = "Flipper Length (mm)", 
