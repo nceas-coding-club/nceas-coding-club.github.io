@@ -76,8 +76,6 @@ This can also be used to loop through the column names of a single dataframe or 
 
 ------------------------------------------------------------------------
 
-{{< include data_byte_sections/ggsvg.qmd >}}
+{{< include data_bytes/ggsvg.qmd >}}
 
 ------------------------------------------------------------------------
-
-
