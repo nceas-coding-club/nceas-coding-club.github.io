@@ -4,11 +4,13 @@ project:
 
 website:
   navbar:
+    pinned: true
     background: primary
     left:
       - href: index.qmd
         text: Home
-      - data_bytes.qmd
+      - href: data_bytes.qmd
+        text: Data Bytes
       - data_recipe.qmd
       - our-team.qmd
 
