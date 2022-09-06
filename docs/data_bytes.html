@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -162,7 +167,7 @@ ul.task-list{list-style: none;}
   </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="iteration" data-listing-date-sort="1662432673000" data-listing-file-modified-sort="1662432673432" data-listing-reading-time-sort="1.575">
+<div class="g-col-1" data-index="0" data-categories="iteration" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1662484351944" data-listing-reading-time-sort="1.575">
 <a href="./data_bytes/basic-for-loop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -192,7 +197,7 @@ Sep 5, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="iteration" data-listing-date-sort="1662432654000" data-listing-file-modified-sort="1662432654492" data-listing-reading-time-sort="2.295">
+<div class="g-col-1" data-index="1" data-categories="iteration" data-listing-date-sort="1662015600000" data-listing-file-modified-sort="1662484396787" data-listing-reading-time-sort="2.295">
 <a href="./data_bytes/looping-through-non-numbers.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -215,14 +220,14 @@ How to write <code>for</code> loops when your sequence doesn’t contain numeric
 Nick J. Lyon
 </div>
 <div class="listing-date">
-Sep 5, 2022
+Sep 1, 2022
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="graph aesthetics" data-listing-date-sort="1662432706000" data-listing-file-modified-sort="1662432706097" data-listing-reading-time-sort="0.97">
+<div class="g-col-1" data-index="2" data-categories="graph aesthetics" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1662488631815" data-listing-reading-time-sort="1.175">
 <a href="./data_bytes/ggsvg.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -326,7 +331,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
