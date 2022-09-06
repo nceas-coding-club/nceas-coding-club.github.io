@@ -1,0 +1,74 @@
+---
+title: "Looping through Non-Numbers"
+author: 
+  - name: "Nick J. Lyon"
+    orcid: "0000-0003-3905-1078"
+
+abstract: "How to write `for` loops when your sequence doesn't contain numeric values." 
+
+date: last-modified
+date-format: MMMM D, YYYY
+
+image: ../images/looping-through-non-numbers.png
+
+categories: iteration
+
+execute:
+  freeze: auto  # re-render only when source changes
+---
+
+---
+
+`for` loops in R are a great way of repeating the same workflow iteratively rather than manually copy/pasting a given workflow for each case. `for` loops are so named because their syntax asks you for which groups you want to repeat the given workflow. The fundamental syntax is as follows:
+
+:::callout-tip
+#### Syntax
+```{r loop-syntax, eval = F}
+for(single_group in all_groups){
+  ...workflow with each "single_group"...
+}
+```
+:::
+
+It is common to learn `for` loops by giving numbers to the `for` function and then conducting some sort of algebraic modification in the curly braces (`{...}`) after the `for`. For instance, we could square every number between 1 and 5 using a `for` loop.
+
+:::callout-note
+#### Example
+```{r loop-numeric}
+for(j in 1:5){
+  # Square "j"
+  result <- j^2
+  # Print the result in each loop
+  print(result)
+}
+```
+:::
+
+In each iteration of the loop above (i.e., *for* each value between 1 and 5), `j` becomes the next number in the provided sequence and squares it. At the end of the loop, your environment will have a value called `j` that is equal to 5 and an object called `result` that is equal to 25. This is because `for` loops only retain the final value of whatever passes through them. There are ways of adding each loop's product to a single object so your output contains the results of all iterations of the loop but we will leave that for another time.
+
+While using numbers as the inputs for a `for` loop is great, many R users don't realize that **you can also use _characters_!** This can be really useful if you have, for example, a dataset with many groups and you want to fit a linear regression for each level in your group column separately. To demonstrate this, we'll use the `penguins` dataset included in the `palmerpenguins` R package.
+
+The `penguins` dataset contains individual-level data on three penguin species (run `?penguins` for more specific detail). Let's say that we want to run compare the bill length between male and female penguins *for* each species. For simplicity's sake, we'll use a Student's t-Test and extract only the p value.
+
+:::callout-note
+#### Example
+```{r loop-character}
+# Load the package
+library(palmerpenguins)
+
+# For each species in the dataframe
+for(sp in unique(penguins$species)){
+  
+  # Subset the data to the selected species and drop NAs in `sex`
+  data_sub <- subset(penguins, species == sp & !is.na(sex))
+  
+  # Now fit the t-test
+  stats <- t.test(data_sub$bill_length_mm ~ data_sub$sex)
+  
+  # And print the p-value!
+  message("For species ", sp, " the p value is ", stats$p.value)
+}
+```
+:::
+
+This can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a `for` loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!
