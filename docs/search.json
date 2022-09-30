@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "data_bytes.html",
+    "href": "data_bytes.html",
+    "title": "NCEAS Coding Club",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nCreating a Basic For Loop\n\n\n\niteration\n\n\n\nLearn how to write a for loop when you’re dealing with numeric values.\n\n\n\nDaphne Virlar-Knight\n\n\nSep 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooping through Non-Numbers\n\n\n\niteration\n\n\n\nHow to write for loops when your sequence doesn’t contain numeric values.\n\n\n\nNick J. Lyon\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Icons in Figures with {ggsvg}\n\n\n\ngraph aesthetics\n\n\n\nLearn how to insert icons into your plots using the {ggsvg} package.\n\n\n\nHaley Epperly Fox\n\n\nSep 5, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data_bytes/basic-for-loop.html",
+    "href": "data_bytes/basic-for-loop.html",
+    "title": "Creating a Basic For Loop",
+    "section": "",
+    "text": "One of the key tenets of programming is the DRY principle: Don’t Repeat Yourself. Essentially, this boils down to not repeating your code ad nauseum to change only one or two things. This is particularly useful for computationally intensive workflows that would require changing tens or hundreds of items. That’s where the for loop comes into play.\nFirst, let’s look at the basic syntax of a for loop. When you write one, you’re telling the computer “run this piece of code (statement) some number of times (range_of_values) in this spot (value).”\n\n\n\n\n\n\nSyntax\n\n\n\n\nfor(value in range_of_values){\n  statement \n  print(statement) \n}\n\n\n\nAnd that’s it! Congratulations, now you know the syntax for a basic for loop! Now let’s see it in practice. Now let’s put it into practice.\n\n\n\n\n\n\nNote\n\n\n\nLet’s say Europe is experiencing a heat wave, but I’m not quite grasping the context of how bad it is because I’m not familiar with the Celsius temperature scale. I know the average temperatures are somewhere between 35-40°C, so I’ll write a quick function to convert the temperatures into Fahrenheit! But that spans over five numbers, and writing that function out five individual times goes against the DRY principle. This gives us the perfect excuse to write a for loop.\nThe equation for converting temperatures from Celsius to Fahrenheit is the following. \\[(deg C*1.8) + 32\\] Knowing that conversion formula, here’s how I’d write my for loop:\n\nfor(degC in 35:40){\n  # Write your statement. Make sure the output of the statement is assigned to an object,\n  # otherwise R will only remember the very last conversion value. \n  fahr <- (degC*1.8) + 32\n  \n  # Print the outputs\n  print(fahr)\n}\n\n[1] 95\n[1] 96.8\n[1] 98.6\n[1] 100.4\n[1] 102.2\n[1] 104\n\n\nYep, that’s pretty toasty!\n\n\nFor more help on for loops and other iterative processes, make sure to check out the R for Data Science book by Hadley Wickham and Garrett Grolemund!"
+  },
+  {
+    "objectID": "data_bytes/ggsvg.html",
+    "href": "data_bytes/ggsvg.html",
+    "title": "Using Icons in Figures with {ggsvg}",
+    "section": "",
+    "text": "Have you ever seen a figure with cute little icons representing data points and thought how you would love to recreate that? I’m here to tell you that you can and the ggsvg package makes it super simple.\nAll you have to do is:\n\nLoad in the ggsvg package\nFigure out which icon you want to use from the ones available here\nSave the url for your chosen icon to read into your gpplot code\nUse geom_point_svg in your ggplot code referencing your saved url (FC 2022)\n\nLet’s run through an example with the palmerpenguins dataset (Horst, Hill, and Gorman 2020). Checkout the package website for some more info and fun artwork! We’re going to subset these data to only include female Chinstrap penguins so that we have fewer data points to plot.\n\n\n\n\n\n\nExample\n\n\n\n\n# load libraries\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n# install.packages('rsvg')\n# remotes::install_github('coolbutuseless/ggsvg')\nlibrary(rsvg)\nlibrary(ggsvg)\n\n\n# find the icon you want and save the url for later reference following this format\nsvg_url <- 'https://www.svgrepo.com/download/133788/penguin.svg'\nsvg_txt <- paste(readLines(svg_url), collapse = \"\\n\")\n\n# filter the penguin data to only female Chinstrap penguins\nchinstrap <- penguins %>% \n  filter(species == \"Chinstrap\", sex == \"female\")\n\n# plot the data with the selected icon used instead of points\nggplot(chinstrap) + \n  geom_point_svg(aes(body_mass_g, flipper_length_mm), svg = svg_txt) + \n  labs(x = \"Body Mass (g)\", y = \"Flipper Length (mm)\", \n       title = \"Comparing body mass and flipper length of female Chinstrap penguins\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\nReferences\n\nFC, Mike. 2022. “Ggsvg: SVG Glyphs for Ggplot.” https://github.com/coolbutuseless/ggsvg.\n\n\nHorst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. “Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data.” https://doi.org/10.5281/zenodo.3960218."
+  },
+  {
+    "objectID": "data_bytes/looping-through-non-numbers.html",
+    "href": "data_bytes/looping-through-non-numbers.html",
+    "title": "Looping through Non-Numbers",
+    "section": "",
+    "text": "for loops in R are a great way of repeating the same workflow iteratively rather than manually copy/pasting a given workflow for each case. for loops are so named because their syntax asks you for which groups you want to repeat the given workflow. The fundamental syntax is as follows:\n\n\n\n\n\n\nSyntax\n\n\n\n\nfor(single_group in all_groups){\n  ...workflow with each \"single_group\"...\n}\n\n\n\nIt is common to learn for loops by giving numbers to the for function and then conducting some sort of algebraic modification in the curly braces ({...}) after the for. For instance, we could square every number between 1 and 5 using a for loop.\n\n\n\n\n\n\nExample\n\n\n\n\nfor(j in 1:5){\n  # Square \"j\"\n  result <- j^2\n  # Print the result in each loop\n  print(result)\n}\n\n[1] 1\n[1] 4\n[1] 9\n[1] 16\n[1] 25\n\n\n\n\nIn each iteration of the loop above (i.e., for each value between 1 and 5), j becomes the next number in the provided sequence and squares it. At the end of the loop, your environment will have a value called j that is equal to 5 and an object called result that is equal to 25. This is because for loops only retain the final value of whatever passes through them. There are ways of adding each loop’s product to a single object so your output contains the results of all iterations of the loop but we will leave that for another time.\nWhile using numbers as the inputs for a for loop is great, many R users don’t realize that you can also use characters! This can be really useful if you have, for example, a dataset with many groups and you want to fit a linear regression for each level in your group column separately. To demonstrate this, we’ll use the penguins dataset included in the palmerpenguins R package.\nThe penguins dataset contains individual-level data on three penguin species (run ?penguins for more specific detail). Let’s say that we want to run compare the bill length between male and female penguins for each species. For simplicity’s sake, we’ll use a Student’s t-Test and extract only the p value.\n\n\n\n\n\n\nExample\n\n\n\n\n# Load the package\nlibrary(palmerpenguins)\n\n# For each species in the dataframe\nfor(sp in unique(penguins$species)){\n  \n  # Subset the data to the selected species and drop NAs in `sex`\n  data_sub <- subset(penguins, species == sp & !is.na(sex))\n  \n  # Now fit the t-test\n  stats <- t.test(data_sub$bill_length_mm ~ data_sub$sex)\n  \n  # And print the p-value!\n  message(\"For species \", sp, \" the p value is \", stats$p.value)\n}\n\nFor species Adelie the p value is 4.80108238442492e-15\n\n\nFor species Gentoo the p value is 1.31503894530191e-14\n\n\nFor species Chinstrap the p value is 8.91840858173204e-10\n\n\n\n\nThis can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a for loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!"
+  },
+  {
+    "objectID": "our-team.html",
+    "href": "our-team.html",
+    "title": "Our Team",
+    "section": "",
+    "text": "njlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking “raw” field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University\nGoals: Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages."
+  },
+  {
+    "objectID": "our-team.html#althea-marks",
+    "href": "our-team.html#althea-marks",
+    "title": "Our Team",
+    "section": "Althea Marks",
+    "text": "Althea Marks\ntheamarks  – marks@nceas.ucsb.edu\n\nAlthea is a Data Science Fellow at the Arctic Data Center data repository. She is working on the “scythe” R package to improve the process of searching for dataset citations in scientific publication databases. Althea comes from an environmental science, water quality, and marine ecology background; she got the reproducible and open science bug while analyzing her graduate research and teaching herself to code.\nGoals for this website:\n\nWork collaboratively with many people using git/github\nLearn how to create a webpage populated by a different github repo\nDig deeper into Quarto formatting\nUse git in the command line for this website"
+  },
+  {
+    "objectID": "our-team.html#camila-vargas-poulsen",
+    "href": "our-team.html#camila-vargas-poulsen",
+    "title": "Our Team",
+    "section": "Camila Vargas Poulsen",
+    "text": "Camila Vargas Poulsen\n camilavargasp –  @CamVargasP – camilavargas@ucsb.edu\n\nCamila is working towards building the Palmyra Atoll Data Library (PADL). She serves as the data manager, rescuing data collected at Palmyra Atoll to document and publish these data packages into the Environmental Data Initiative repository (EDI). As a data and project manager, Camila enjoys developing efficient workflows for cleaning, organizing, and documenting data, making it ready to be analized and ensure long-term preservation. Camila holds a Masters in Environmental Science & Management from the Bren School at UCSB.\nData Science Tools: RStudio and Github\ndata-science-chats goals: Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.\nGoals for this website: Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work."
+  },
+  {
+    "objectID": "our-team.html#haley-epperly-fox",
+    "href": "our-team.html#haley-epperly-fox",
+    "title": "Our Team",
+    "section": "Haley (Epperly) Fox",
+    "text": "Haley (Epperly) Fox\nhaleyepperlyfox  – epperly@nceas.ucsb.edu\n\nHaley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.\nGoals for this website: Website goals include collaborating with others in Github, understanding and using more of Github’s capabilities, using the terminal to interact with Github, and learning more about Quarto’s capabilities."
+  },
+  {
+    "objectID": "our-team.html#daphne-virlar-knight",
+    "href": "our-team.html#daphne-virlar-knight",
+    "title": "Our Team",
+    "section": "Daphne Virlar-Knight",
+    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management."
+  },
+  {
+    "objectID": "our-team.html#angel-chen",
+    "href": "our-team.html#angel-chen",
+    "title": "Our Team",
+    "section": "Angel Chen",
+    "text": "Angel Chen\n angelchen7 – anchen@nceas.ucsb.edu\n\nAngel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.\nGoals for this website: Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!"
+  },
+  {
+    "objectID": "our-team.html#samantha-csik",
+    "href": "our-team.html#samantha-csik",
+    "title": "Our Team",
+    "section": "Samantha Csik",
+    "text": "Samantha Csik\nsamanthacsik.github.io –  samanthacsik –  @SamanthaCsik – scsik@ucsb.edu\n\nSam is the NCEAS Data Training Coordinator where she’s working to develop and teach data science training curricula for the Master of Environmental Data Science (MEDS) program and other data science initiatives across NCEAS and UCSB. She is also a co-organizer of R-Ladies Santa Barbara, a local data science group which works to promote diversity in the R community. In her spare time, you’ll typically find her hiking with her pup or cooking family dinners with friends.\ndata-science-chats goals: Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space — it’s always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.\nGoals for this website: Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot — trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NCEAS Coding Club",
+    "section": "",
+    "text": "The National Center for Ecological Analysis and Synthesis’ (NCEAS) Coding Club and Data Science Chats (DSC) are born from a desire to learn and teach peer-to-peer on all things data science and early career. Topics can be best practices or hack-y work-arounds – the only guiding light is that you describe some data management/analysis task that you’ve found helpful (or request a talk on something you would find useful!). For now, we are comprised only of NCEAS employees but we may organically grow beyond that scope given time."
+  },
+  {
+    "objectID": "index.html#other-resources",
+    "href": "index.html#other-resources",
+    "title": "NCEAS Coding Club",
+    "section": "Other Resources",
+    "text": "Other Resources\nScripts produced outside of this website can largely be found in the “data-science-chats_scripts” GitHub repository though because git is not prerequisite to joining DSC, not all scripts are placed in that repo."
+  },
+  {
+    "objectID": "data_recipe.html",
+    "href": "data_recipe.html",
+    "title": "Data Recipes",
+    "section": "",
+    "text": "Data Recipes are similar to Data Bytes but tend to focus on longer or more nuanced coding tutorials or explanations. This page will also grow as we develop recipes so check back to make sure you see our recipes as we create them! If you have an idea for a recipe, Post an Issue on our GitHub repository and we can add it to our list."
+  }
+]
