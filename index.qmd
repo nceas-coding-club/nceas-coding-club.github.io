@@ -1,7 +1,11 @@
 ---
-title: "mysite"
+title: "NCEAS Coding Club"
 ---
 
-This is a Quarto website.
+## Motivations
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The National Center for Ecological Analysis and Synthesis' (NCEAS) Coding Club and Data Science Chats (DSC) are born from a desire to learn and teach peer-to-peer on all things data science and early career. Topics can be best practices or hack-y work-arounds -- the only guiding light is that you describe some data management/analysis task that you've found helpful (or request a talk on something you *would* find useful!). For now, we are comprised only of NCEAS employees but we may organically grow beyond that scope given time.
+
+## Other Resources
+
+Scripts produced outside of this website can largely be found in the ["data-science-chats_scripts" GitHub repository](https://github.com/nceas-coding-club/data-science-chats_scripts) though because `git` is **not** prerequisite to joining DSC, not all scripts are placed in that repo.
