@@ -41,6 +41,9 @@ Let's run through an example with the `palmerpenguins` dataset [@palmerpenguins]
 # load libraries
 library(palmerpenguins)
 library(tidyverse)
+# install.packages('rsvg')
+# remotes::install_github('coolbutuseless/ggsvg')
+library(rsvg)
 library(ggsvg)
 ```
 

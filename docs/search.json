@@ -2,7 +2,7 @@
   {
     "objectID": "data_bytes.html",
     "href": "data_bytes.html",
-    "title": "",
+    "title": "NCEAS Coding Club",
     "section": "",
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nCreating a Basic For Loop\n\n\n\niteration\n\n\n\nLearn how to write a for loop when you’re dealing with numeric values.\n\n\n\nDaphne Virlar-Knight\n\n\nSep 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooping through Non-Numbers\n\n\n\niteration\n\n\n\nHow to write for loops when your sequence doesn’t contain numeric values.\n\n\n\nNick J. Lyon\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Icons in Figures with {ggsvg}\n\n\n\ngraph aesthetics\n\n\n\nLearn how to insert icons into your plots using the {ggsvg} package.\n\n\n\nHaley Epperly Fox\n\n\nSep 5, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
@@ -18,7 +18,7 @@
     "href": "data_bytes/ggsvg.html",
     "title": "Using Icons in Figures with {ggsvg}",
     "section": "",
-    "text": "Have you ever seen a figure with cute little icons representing data points and thought how you would love to recreate that? I’m here to tell you that you can and the ggsvg package makes it super simple.\nAll you have to do is:\n\nLoad in the ggsvg package\nFigure out which icon you want to use from the ones available here\nSave the url for your chosen icon to read into your gpplot code\nUse geom_point_svg in your ggplot code referencing your saved url (FC 2022)\n\nLet’s run through an example with the palmerpenguins dataset (Horst, Hill, and Gorman 2020). Checkout the package website for some more info and fun artwork! We’re going to subset these data to only include female Chinstrap penguins so that we have fewer data points to plot.\n\n\n\n\n\n\nExample\n\n\n\n\n# load libraries\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(ggsvg)\n\n\n# find the icon you want and save the url for later reference following this format\nsvg_url <- 'https://www.svgrepo.com/download/133788/penguin.svg'\nsvg_txt <- paste(readLines(svg_url), collapse = \"\\n\")\n\n# filter the penguin data to only female Chinstrap penguins\nchinstrap <- penguins %>% \n  filter(species == \"Chinstrap\", sex == \"female\")\n\n# plot the data with the selected icon used instead of points\nggplot(chinstrap) + \n  geom_point_svg(aes(body_mass_g, flipper_length_mm), svg = svg_txt) + \n  labs(x = \"Body Mass (g)\", y = \"Flipper Length (mm)\", \n       title = \"Comparing body mass and flipper length of female Chinstrap penguins\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\nReferences\n\nFC, Mike. 2022. “Ggsvg: SVG Glyphs for Ggplot.” https://github.com/coolbutuseless/ggsvg.\n\n\nHorst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. “Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data.” https://doi.org/10.5281/zenodo.3960218."
+    "text": "Have you ever seen a figure with cute little icons representing data points and thought how you would love to recreate that? I’m here to tell you that you can and the ggsvg package makes it super simple.\nAll you have to do is:\n\nLoad in the ggsvg package\nFigure out which icon you want to use from the ones available here\nSave the url for your chosen icon to read into your gpplot code\nUse geom_point_svg in your ggplot code referencing your saved url (FC 2022)\n\nLet’s run through an example with the palmerpenguins dataset (Horst, Hill, and Gorman 2020). Checkout the package website for some more info and fun artwork! We’re going to subset these data to only include female Chinstrap penguins so that we have fewer data points to plot.\n\n\n\n\n\n\nExample\n\n\n\n\n# load libraries\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n# install.packages('rsvg')\n# remotes::install_github('coolbutuseless/ggsvg')\nlibrary(rsvg)\nlibrary(ggsvg)\n\n\n# find the icon you want and save the url for later reference following this format\nsvg_url <- 'https://www.svgrepo.com/download/133788/penguin.svg'\nsvg_txt <- paste(readLines(svg_url), collapse = \"\\n\")\n\n# filter the penguin data to only female Chinstrap penguins\nchinstrap <- penguins %>% \n  filter(species == \"Chinstrap\", sex == \"female\")\n\n# plot the data with the selected icon used instead of points\nggplot(chinstrap) + \n  geom_point_svg(aes(body_mass_g, flipper_length_mm), svg = svg_txt) + \n  labs(x = \"Body Mass (g)\", y = \"Flipper Length (mm)\", \n       title = \"Comparing body mass and flipper length of female Chinstrap penguins\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\nReferences\n\nFC, Mike. 2022. “Ggsvg: SVG Glyphs for Ggplot.” https://github.com/coolbutuseless/ggsvg.\n\n\nHorst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. “Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data.” https://doi.org/10.5281/zenodo.3960218."
   },
   {
     "objectID": "data_bytes/looping-through-non-numbers.html",
@@ -79,15 +79,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mysite",
+    "title": "NCEAS Coding Club",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "The National Center for Ecological Analysis and Synthesis’ (NCEAS) Coding Club is born from a desire to learn and teach peer-to-peer on all things data science and early career. The main motivation is to create spaces within our workplace that are welcoming, empowering and supportive. Where participants can experiment with their new knowledge, present their ideas, ask questions, and learn from each other.\nBased on Openscapes Seaside Chats philosophy, a group of us meet weekly on what we call Data Science Chats (DSC). The goal of these meetings is to talk data science. A place where we discuss data challenges and seek, offer and accept guidance from one another. Topics can be best practices or hack-y work-arounds – the only guiding light is that you describe some data management/analysis task that you’ve found helpful (or request a talk on something you would find useful!).\nFor now, we are comprised only of NCEAS employees but we may organically grow beyond that scope given time."
+  },
+  {
+    "objectID": "index.html#other-resources",
+    "href": "index.html#other-resources",
+    "title": "NCEAS Coding Club",
+    "section": "Other Resources",
+    "text": "Other Resources\nScripts produced outside of this website can largely be found in the “data-science-chats_scripts” GitHub repository though because git is not prerequisite to joining DSC, not all scripts are placed in that repo."
   },
   {
     "objectID": "data_recipe.html",
     "href": "data_recipe.html",
     "title": "Data Recipes",
     "section": "",
-    "text": "About this site"
+    "text": "Data Recipes are similar to Data Bytes but tend to focus on longer or more nuanced coding tutorials or explanations. This page will also grow as we develop recipes so check back to make sure you see our recipes as we create them! If you have an idea for a recipe, Post an Issue on our GitHub repository and we can add it to our list."
   }
 ]

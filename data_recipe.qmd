@@ -2,4 +2,8 @@
 title: "Data Recipes"
 ---
 
-About this site
+### What's a Data Recipe?
+
+Data Recipes are similar to Data Bytes but tend to focus on longer or more nuanced coding tutorials or explanations. This page will also grow as we develop recipes so check back to make sure you see our recipes as we create them! If you have an idea for a recipe, [Post an Issue](https://github.com/nceas-coding-club/nceas-coding-club.github.io/issues) on our GitHub repository and we can add it to our list.
+
+
