@@ -8,6 +8,8 @@ abstract: "Recomended practices for file naming. Your future self will thank you
 
 date: "Oct 6, 2022"
 date-format: MMMM D, YYYY
+
+image: ../images/file-naming-image.png
 ---
 
 ```{=html}
