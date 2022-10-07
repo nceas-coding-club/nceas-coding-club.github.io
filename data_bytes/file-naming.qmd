@@ -62,6 +62,6 @@ Recommended practices (according to the same [Librarians at Princeton](https://l
 
     -   This is a machine friendly date format and mildly magical. You will notice that your files will automatically sort by year, then month, and day leading to much easier navigation and confidence that the latest version isn't hiding elsewhere.
 
-    ![](/images/file-naming-image.png)
+    ![My first attemp at a consistent file naming convention and self-sorting files with YYYMMDD. There's always room for improvement!](/images/file-naming-image.png)
 
 Happy file naming!
