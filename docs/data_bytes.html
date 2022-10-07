@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.0.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,15 +11,10 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
 </style>
 
 
@@ -128,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="graph aesthetics">graph aesthetics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iteration">iteration <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="graph aesthetics">graph aesthetics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iteration">iteration <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -167,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="iteration" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1662484351944" data-listing-reading-time-sort="1.575">
+<div class="g-col-1" data-index="0" data-categories="iteration" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1664564305179" data-listing-reading-time-sort="1.575">
 <a href="./data_bytes/basic-for-loop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -197,7 +192,32 @@ Sep 5, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="iteration" data-listing-date-sort="1662015600000" data-listing-file-modified-sort="1662484396787" data-listing-reading-time-sort="2.295">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1665039600000" data-listing-file-modified-sort="1665166481770" data-listing-reading-time-sort="1.775">
+<a href="./data_bytes/file-naming.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/file-naming-image.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+File Naming
+</h5>
+<div class="card-text listing-description">
+Recomended practices for file naming. Your future self will thank you.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Althea Marks
+</div>
+<div class="listing-date">
+Oct 6, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="iteration" data-listing-date-sort="1662015600000" data-listing-file-modified-sort="1664564305179" data-listing-reading-time-sort="2.295">
 <a href="./data_bytes/looping-through-non-numbers.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -227,7 +247,7 @@ Sep 1, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="graph aesthetics" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1662488631815" data-listing-reading-time-sort="1.175">
+<div class="g-col-1" data-index="3" data-categories="graph aesthetics" data-listing-date-sort="1662361200000" data-listing-file-modified-sort="1665169923365" data-listing-reading-time-sort="1.27">
 <a href="./data_bytes/ggsvg.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -331,8 +351,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      let href = ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

@@ -39,9 +39,19 @@ Let's run through an example with the `palmerpenguins` dataset [@palmerpenguins]
 #| output: false
 
 # load libraries
-library(palmerpenguins)
-library(tidyverse)
-library(ggsvg)
+if (!require(librarian, quietly = T)){
+  install.packages('librarian')
+}
+
+librarian::shelf(
+  tidyverse,
+  here,
+  palmerpenguins,
+  coolbutuseless/ggsvg,
+  quiet = T
+) 
+
+
 ```
 
 ```{r}
