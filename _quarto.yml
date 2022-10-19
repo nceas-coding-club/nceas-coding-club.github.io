@@ -3,12 +3,11 @@ project:
   output-dir: docs
 
 website:
+  title: "NCEAS Coding Club"
   navbar:
     pinned: true
     background: primary
     left:
-      - href: index.qmd
-        text: Home
       - href: data_bytes.qmd
         text: Data Bytes
       - data_recipe.qmd
