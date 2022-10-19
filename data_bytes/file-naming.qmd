@@ -1,0 +1,69 @@
+---
+title: "File Naming"
+author:
+  name: "Althea Marks"
+  orcid: "0000-0002-9370-9128"
+ 
+abstract: "Recomended practices for file naming. Your future self will thank you."
+
+date: "Oct 6, 2022"
+date-format: MMMM D, YYYY
+
+image: ../images/file-naming-image.png
+---
+
+```{=html}
+<iframe src="https://giphy.com/embed/aDcvK946SC3GwCqLk8" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/BTTF-back-to-the-future-bttf-one-aDcvK946SC3GwCqLk8"></a></p>
+```
+
+------------------------------------------------------------------------
+
+We've all been there. Blood pressure rising as we are searching through our files for the final version of that report... Is it `final-final-v3-edits`, `FINAL`, or `final_report` ? 🤯 Or how about that Google Drive you share with your colleagues that in reality is a black hole that no one wants to venture into alone?
+
+There are many sophisticated organization strategies out there, but following Julie Andrew's advice: "let's start at the beginning a very good place to start." When you begin to save, you start with Year, Month, Day!
+
+------------------------------------------------------------------------
+
+According to the [Librarians at Princeton](https://libguides.princeton.edu/c.php?g=102546&p=930626) there are [several elements to consider when naming your files]{.underline}. They include:
+
+-   Date of creation
+-   Description
+-   Location
+-   Project name
+-   Sample
+-   Analysis
+-   Version number
+
+The next step is to agree (with your self or collaborators) upon a convention based on elements that are most important to the project.
+
+::: callout-tip
+## For Example
+
+When writing and editing my thesis with my advisor, I used the naming convention "Project name" + "Last name" + "Thesis" + "Date" which looked like `Insitu_Filter_Marks_Thesis_2020_10_20.docx`.
+:::
+
+------------------------------------------------------------------------
+
+Recommended practices (according to the same [Librarians at Princeton](https://libguides.princeton.edu/c.php?g=102546&p=930626)) for crafting a file naming convention are:
+
+-   Files names should be consistent
+
+-   Concise yet descriptive
+
+-   Avoid special characters (these will cause headaches when reading into various programs)
+
+-   Include version number
+
+-   Record naming convention in your [data management plan](https://library.stanford.edu/research/data-management-services/data-management-plans)
+
+-   Get rid of spaces
+
+    -   programs like R do not deal well with spaces - use hyphens, underscores, or capitals to make file names more readable
+
+-   Using ISO 8601: YYYYMMDD as your date
+
+    -   This is a machine friendly date format and mildly magical. You will notice that your files will automatically sort by year, then month, and day leading to much easier navigation and confidence that the latest version isn't hiding elsewhere.
+
+    ![My first attemp at a consistent file naming convention and self-sorting files with YYYMMDD. There's always room for improvement!](/images/file-naming-image.png)
+
+Happy file naming!
