@@ -103,5 +103,11 @@
     "title": "Data Recipes",
     "section": "",
     "text": "Data Recipes are similar to Data Bytes but tend to focus on longer or more nuanced coding tutorials or explanations. This page will also grow as we develop recipes so check back to make sure you see our recipes as we create them! If you have an idea for a recipe, Post an Issue on our GitHub repository and we can add it to our list."
+
+    "objectID": "our-team.html#halina-do-linh",
+    "href": "our-team.html#halina-do-linh",
+    "title": "Our Team",
+    "section": "Halina Do-Linh",
+    "text": "Halina Do-Linh\nhdolinh.github.io –  hdolinh –  @hdolinh – do-linh@nceas.ucsb.edu\n\nHalina is the NCEAS Data Training Program Manager and maintains the NCEAS Learning Hub. She collaborates with programs like the Arctic Data Center and the LTER Network to support data scientists and researchers who want to grow their data science skills. She recently achieved a Masters in Environmental Data Science from the Bren School. In her free time, Halina is playing sudoku, going back n forth between books, and taking leisurely neighborhood walks.\ndata-science-chats goals: Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.\nGoals for this website: Practice Quarto. Collaborate using git and GitHub. Write a blog."
   }
 ]
