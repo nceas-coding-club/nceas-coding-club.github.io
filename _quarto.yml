@@ -12,6 +12,9 @@ website:
         text: Data Bytes
       - data_recipe.qmd
       - our-team.qmd
+    right: 
+      - icon: github
+        href: https://github.com/nceas-coding-club/nceas-coding-club.github.io
 
 format:
   html:
