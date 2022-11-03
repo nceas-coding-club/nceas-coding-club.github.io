@@ -82,3 +82,15 @@ Sam is the NCEAS Data Training Coordinator where she's working to develop and te
 **data-science-chats goals:** Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space --- it's always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.
 
 **Goals for this website:** Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot --- trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line.
+
+## Halina Do-Linh
+
+[hdolinh.github.io](https://hdolinh.github.io/) -- <img src="images/github_logo.png" width="2%"/> [hdolinh](https://github.com/hdolinh) -- <img src="images/twitter_logo.png" width="2%"/> [\@hdolinh](https://twitter.com/hdolinh) -- [**do-linh\@nceas.ucsb.edu**](mailto:do-linh@nceas.ucsb.edu)
+
+<img src="images/hdolinh.jpg" width="25%" align="right"/>
+
+Halina is the NCEAS Data Training Program Manager and maintains the [NCEAS Learning Hub](https://learning.nceas.ucsb.edu/). She collaborates with programs like the [Arctic Data Center](https://arcticdata.io/) and the [LTER Network](https://lternet.edu/) to support data scientists and researchers who want to grow their data science skills. She recently achieved a [Masters in Environmental Data Science](https://ucsb-meds.github.io/) from the [Bren School](https://bren.ucsb.edu/masters-programs/master-environmental-data-science). In her free time, Halina is playing sudoku, going back n forth between [books](https://www.goodreads.com/user/show/27861467-halina-do-linh), and taking leisurely neighborhood walks.
+
+**data-science-chats goals:** Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.
+
+**Goals for this website:** Practice `Quarto`. Collaborate using `git` and `GitHub`. Write a blog.
