@@ -4,19 +4,53 @@ format: html
 editor: visual
 ---
 
-## Nick Lyon
+## Angel Chen
 
-[njlyon0.github.io](https://njlyon0.github.io/) -- <img src="images/github_logo.png" width="2%"/> [njlyon0](https://github.com/njlyon0) -- <img src="images/twitter_logo.png" width="2%"/> [\@scilyon](https://twitter.com/scilyon) -- **lyon\@nceas.ucsb.edu**
+{{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen\@nceas.ucsb.edu**
 
-<img src="images/nlyon.png" width="25%" align="right"/>
+<img src="images/achen.jpg" align="right" width="25%"/>
 
-Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
+Angel supports [LTER](https://lternet.edu/) synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the [Arctic Data Center](https://arcticdata.io/), helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.
 
-**Goals:** Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages.
+**Goals for this website:** Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!
+
+## Samantha Csik
+
+[samanthacsik.github.io](https://samanthacsik.github.io/) -- {{< fa brands github >}} [samanthacsik](https://github.com/samanthacsik) -- {{< fa brands twitter >}} [\@SamanthaCsik](https://twitter.com/SamanthaCsik) -- [**scsik\@ucsb.edu**](mailto:scsik@ucsb.edu)
+
+<img src="images/scsik.jpg" width="25%" align="right"/>
+
+Sam is the NCEAS Data Training Coordinator where she's working to develop and teach data science training curricula for the [Master of Environmental Data Science (MEDS) program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) and other data science initiatives across NCEAS and UCSB. She is also a co-organizer of R-Ladies Santa Barbara, a local data science group which works to promote diversity in the R community. In her spare time, you'll typically find her hiking with her pup or cooking family dinners with friends.
+
+**data-science-chats goals:** Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space --- it's always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.
+
+**Goals for this website:** Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot --- trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line.
+
+## Halina Do-Linh
+
+[hdolinh.github.io](https://hdolinh.github.io/) -- {{< fa brands github >}} [hdolinh](https://github.com/hdolinh) -- {{< fa brands twitter >}} [\@hdolinh](https://twitter.com/hdolinh) -- [**do-linh\@nceas.ucsb.edu**](mailto:do-linh@nceas.ucsb.edu)
+
+<img src="images/hdolinh.jpg" width="25%" align="right"/>
+
+Halina is the NCEAS Data Training Program Manager and maintains the [NCEAS Learning Hub](https://learning.nceas.ucsb.edu/). She collaborates with programs like the [Arctic Data Center](https://arcticdata.io/) and the [LTER Network](https://lternet.edu/) to support data scientists and researchers who want to grow their data science skills. She recently achieved a [Masters in Environmental Data Science](https://ucsb-meds.github.io/) from the [Bren School](https://bren.ucsb.edu/masters-programs/master-environmental-data-science). In her free time, Halina is playing sudoku, going back n forth between [books](https://www.goodreads.com/user/show/27861467-halina-do-linh), and taking leisurely neighborhood walks.
+
+**data-science-chats goals:** Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.
+
+**Goals for this website:** Practice `Quarto`. Collaborate using `git` and `GitHub`. Write a blog.
+
+## Haley (Epperly) Fox
+
+{{< fa brands github >}} [haleyepperlyfox](https://github.com/haleyepperlyfox) -- **epperly\@nceas.ucsb.edu**
+
+<img src="images/hepperlyfox.jpeg" width="25%" align="right"/>
+
+Haley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.
+
+**Goals for this website:** Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
 
 ## Althea Marks
 
-[theamarks](https://github.com/theamarks) <img src="images/github_logo.png" width="2%"/> -- **marks\@nceas.ucsb.edu**
+{{< fa brands github >}} [theamarks](https://github.com/theamarks) -- **marks\@nceas.ucsb.edu**
 
 <img src="images/amarks.jpeg" width="25%" align="right"/>
 
@@ -29,9 +63,19 @@ Althea is a Data Science Fellow at the Arctic Data Center data repository. She i
 -   Dig deeper into Quarto formatting
 -   Use git in the command line for this website
 
+## Nick Lyon
+
+[njlyon0.github.io](https://njlyon0.github.io/) -- {{< fa brands github >}} [njlyon0](https://github.com/njlyon0) -- {{< fa brands twitter >}} [\@scilyon](https://twitter.com/scilyon) -- **lyon\@nceas.ucsb.edu**
+
+<img src="images/nlyon.png" width="25%" align="right"/>
+
+Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
+
+**Goals:** Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages.
+
 ## Camila Vargas Poulsen
 
-<img src="images/github_logo.png" width="2%"/> [camilavargasp](https://github.com/camilavargasp) -- <img src="images/twitter_logo.png" width="2%"/> [\@CamVargasP](https://twitter.com/CamVargasP) -- **camilavargas\@ucsb.edu**
+{{< fa brands github >}} [camilavargasp](https://github.com/camilavargasp) -- {{< fa brands twitter >}} [\@CamVargasP](https://twitter.com/CamVargasP) -- **camilavargas\@ucsb.edu**
 
 <img src="images/cvargas.jpeg" width="25%" align="right"/>
 
@@ -43,54 +87,12 @@ Camila is working towards building the [Palmyra Atoll Data Library (PADL)](https
 
 **Goals for this website:** Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work.
 
-## Haley (Epperly) Fox
 
-[haleyepperlyfox](https://github.com/haleyepperlyfox) <img src="images/github_logo.png" width="2%"/> -- **epperly\@nceas.ucsb.edu**
-
-<img src="images/hepperlyfox.jpeg" width="25%" align="right"/>
-
-Haley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.
-
-**Goals for this website:** Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
 
 ## Daphne Virlar-Knight
 
-[dvirlar.com](https://dvirlar.com) -- <img src="images/github_logo.png" width="2%"/> [dvirlar2](https://github.com/dvirlar2) -- <img src="images/twitter_logo.png" width="2%"/> [\@dvirlar2](https://twitter.com/dvirlar2) -- **virlar-knight\@nceas.ucsb.edu**
+[dvirlar.com](https://dvirlar.com) -- {{< fa brands github >}} [dvirlar2](https://github.com/dvirlar2) -- {{< fa brands twitter >}} [\@dvirlar2](https://twitter.com/dvirlar2) -- **virlar-knight\@nceas.ucsb.edu**
 
 <img src="images/virlar.jpeg" align="right" width="25%"/>
 
 Daphne helps curate metadata for every dataset submitted to the National Science Foundation's [Arctic Data Center](https://arcticdata.io/), the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne's background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master's degree from the Bren School of Environmental Science & Management.
-
-## Angel Chen
-
-<img src="images/github_logo.png" width="2%"/> [angelchen7](https://github.com/angelchen7) -- **anchen\@nceas.ucsb.edu**
-
-<img src="images/achen.jpg" align="right" width="25%"/>
-
-Angel supports [LTER](https://lternet.edu/) synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the [Arctic Data Center](https://arcticdata.io/), helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.
-
-**Goals for this website:** Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!
-
-## Samantha Csik
-
-[samanthacsik.github.io](https://samanthacsik.github.io/) -- <img src="images/github_logo.png" width="2%"/> [samanthacsik](https://github.com/samanthacsik) -- <img src="images/twitter_logo.png" width="2%"/> [\@SamanthaCsik](https://twitter.com/SamanthaCsik) -- [**scsik\@ucsb.edu**](mailto:scsik@ucsb.edu)
-
-<img src="images/scsik.jpg" width="25%" align="right"/>
-
-Sam is the NCEAS Data Training Coordinator where she's working to develop and teach data science training curricula for the [Master of Environmental Data Science (MEDS) program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) and other data science initiatives across NCEAS and UCSB. She is also a co-organizer of R-Ladies Santa Barbara, a local data science group which works to promote diversity in the R community. In her spare time, you'll typically find her hiking with her pup or cooking family dinners with friends.
-
-**data-science-chats goals:** Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space --- it's always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.
-
-**Goals for this website:** Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot --- trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line.
-
-## Halina Do-Linh
-
-[hdolinh.github.io](https://hdolinh.github.io/) -- <img src="images/github_logo.png" width="2%"/> [hdolinh](https://github.com/hdolinh) -- <img src="images/twitter_logo.png" width="2%"/> [\@hdolinh](https://twitter.com/hdolinh) -- [**do-linh\@nceas.ucsb.edu**](mailto:do-linh@nceas.ucsb.edu)
-
-<img src="images/hdolinh.jpg" width="25%" align="right"/>
-
-Halina is the NCEAS Data Training Program Manager and maintains the [NCEAS Learning Hub](https://learning.nceas.ucsb.edu/). She collaborates with programs like the [Arctic Data Center](https://arcticdata.io/) and the [LTER Network](https://lternet.edu/) to support data scientists and researchers who want to grow their data science skills. She recently achieved a [Masters in Environmental Data Science](https://ucsb-meds.github.io/) from the [Bren School](https://bren.ucsb.edu/masters-programs/master-environmental-data-science). In her free time, Halina is playing sudoku, going back n forth between [books](https://www.goodreads.com/user/show/27861467-halina-do-linh), and taking leisurely neighborhood walks.
-
-**data-science-chats goals:** Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.
-
-**Goals for this website:** Practice `Quarto`. Collaborate using `git` and `GitHub`. Write a blog.
