@@ -6,7 +6,7 @@ editor: visual
 
 ## Angel Chen
 
-{{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen\@nceas.ucsb.edu**
+{{< fa brands github >}} angelchen7 – anchen@nceas.ucsb.edu
 
 <img src="images/achen.jpg" align="right" width="25%"/>
 
@@ -40,7 +40,7 @@ Halina is the NCEAS Data Training Program Manager and maintains the [NCEAS Learn
 
 ## Haley (Epperly) Fox
 
-{{< fa brands github >}} [haleyepperlyfox](https://github.com/haleyepperlyfox) -- **epperly\@nceas.ucsb.edu**
+{{< fa brands github >}} haleyepperlyfox – epperly@nceas.ucsb.edu
 
 <img src="images/hepperlyfox.jpeg" width="25%" align="right"/>
 
@@ -48,9 +48,19 @@ Haley is a Data Scientist at the National Center for Ecological Analysis and Syn
 
 **Goals for this website:** Website goals include collaborating with others in Github, understanding and using more of Github's capabilities, using the terminal to interact with Github, and learning more about Quarto's capabilities.
 
+## Nick Lyon
+
+[njlyon0.github.io](https://njlyon0.github.io/) -- {{< fa brands github >}} [njlyon0](https://github.com/njlyon0) -- {{< fa brands twitter >}} [\@scilyon](https://twitter.com/scilyon) -- **lyon\@nceas.ucsb.edu**
+
+<img src="images/nlyon.png" width="25%" align="right"/>
+
+Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
+
+**Goals:** Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages.
+
 ## Althea Marks
 
-{{< fa brands github >}} [theamarks](https://github.com/theamarks) -- **marks\@nceas.ucsb.edu**
+{{< fa brands github >}} theamarks – marks@nceas.ucsb.edu
 
 <img src="images/amarks.jpeg" width="25%" align="right"/>
 
@@ -63,19 +73,9 @@ Althea is a Data Science Fellow at the Arctic Data Center data repository. She i
 -   Dig deeper into Quarto formatting
 -   Use git in the command line for this website
 
-## Nick Lyon
-
-[njlyon0.github.io](https://njlyon0.github.io/) -- {{< fa brands github >}} [njlyon0](https://github.com/njlyon0) -- {{< fa brands twitter >}} [\@scilyon](https://twitter.com/scilyon) -- **lyon\@nceas.ucsb.edu**
-
-<img src="images/nlyon.png" width="25%" align="right"/>
-
-Nick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking "raw" field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University
-
-**Goals:** Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages.
-
 ## Camila Vargas Poulsen
 
-{{< fa brands github >}} [camilavargasp](https://github.com/camilavargasp) -- {{< fa brands twitter >}} [\@CamVargasP](https://twitter.com/CamVargasP) -- **camilavargas\@ucsb.edu**
+{{< fa brands github >}} camilavargasp – {{< fa brands twitter >}}  – camilavargas@ucsb.edu
 
 <img src="images/cvargas.jpeg" width="25%" align="right"/>
 
@@ -86,8 +86,6 @@ Camila is working towards building the [Palmyra Atoll Data Library (PADL)](https
 **data-science-chats goals:** Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.
 
 **Goals for this website:** Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work.
-
-
 
 ## Daphne Virlar-Knight
 
