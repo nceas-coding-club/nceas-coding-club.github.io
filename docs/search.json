@@ -25,7 +25,7 @@
     "href": "data_bytes/looping-through-non-numbers.html",
     "title": "Looping through Non-Numbers",
     "section": "",
-    "text": "for loops in R are a great way of repeating the same workflow iteratively rather than manually copy/pasting a given workflow for each case. for loops are so named because their syntax asks you for which groups you want to repeat the given workflow. The fundamental syntax is as follows:\n\n\n\n\n\n\nSyntax\n\n\n\n\nfor(single_group in all_groups){\n  ...workflow with each \"single_group\"...\n}\n\n\n\nIt is common to learn for loops by giving numbers to the for function and then conducting some sort of algebraic modification in the curly braces ({...}) after the for. For instance, we could square every number between 1 and 5 using a for loop.\n\n\n\n\n\n\nExample\n\n\n\n\nfor(j in 1:5){\n  # Square \"j\"\n  result <- j^2\n  # Print the result in each loop\n  print(result)\n}\n\n[1] 1\n[1] 4\n[1] 9\n[1] 16\n[1] 25\n\n\n\n\nIn each iteration of the loop above (i.e., for each value between 1 and 5), j becomes the next number in the provided sequence and squares it. At the end of the loop, your environment will have a value called j that is equal to 5 and an object called result that is equal to 25. This is because for loops only retain the final value of whatever passes through them. There are ways of adding each loop’s product to a single object so your output contains the results of all iterations of the loop but we will leave that for another time.\nWhile using numbers as the inputs for a for loop is great, many R users don’t realize that you can also use characters! This can be really useful if you have, for example, a dataset with many groups and you want to fit a linear regression for each level in your group column separately. To demonstrate this, we’ll use the penguins dataset included in the palmerpenguins R package.\nThe penguins dataset contains individual-level data on three penguin species (run ?penguins for more specific detail). Let’s say that we want to run compare the bill length between male and female penguins for each species. For simplicity’s sake, we’ll use a Student’s t-Test and extract only the p value.\n\n\n\n\n\n\nExample\n\n\n\n\n# Load the package\nlibrary(palmerpenguins)\n\n# For each species in the dataframe\nfor(sp in unique(penguins$species)){\n  \n  # Subset the data to the selected species and drop NAs in `sex`\n  data_sub <- subset(penguins, species == sp & !is.na(sex))\n  \n  # Now fit the t-test\n  stats <- t.test(data_sub$bill_length_mm ~ data_sub$sex)\n  \n  # And print the p-value!\n  message(\"For species \", sp, \" the p value is \", stats$p.value)\n}\n\nFor species Adelie the p value is 4.80108238442491e-15\n\n\nFor species Gentoo the p value is 1.31503894530191e-14\n\n\nFor species Chinstrap the p value is 8.91840858173197e-10\n\n\n\n\nThis can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a for loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!"
+    "text": "for loops in R are a great way of repeating the same workflow iteratively rather than manually copy/pasting a given workflow for each case. for loops are so named because their syntax asks you for which groups you want to repeat the given workflow. The fundamental syntax is as follows:\n\n\n\n\n\n\nSyntax\n\n\n\n\nfor(single_group in all_groups){\n  ...workflow with each \"single_group\"...\n}\n\n\n\nIt is common to learn for loops by giving numbers to the for function and then conducting some sort of algebraic modification in the curly braces ({...}) after the for. For instance, we could square every number between 1 and 5 using a for loop.\n\n\n\n\n\n\nExample\n\n\n\n\nfor(j in 1:5){\n  # Square \"j\"\n  result <- j^2\n  # Print the result in each loop\n  print(result)\n}\n\n[1] 1\n[1] 4\n[1] 9\n[1] 16\n[1] 25\n\n\n\n\nIn each iteration of the loop above (i.e., for each value between 1 and 5), j becomes the next number in the provided sequence and squares it. At the end of the loop, your environment will have a value called j that is equal to 5 and an object called result that is equal to 25. This is because for loops only retain the final value of whatever passes through them. There are ways of adding each loop’s product to a single object so your output contains the results of all iterations of the loop but we will leave that for another time.\nWhile using numbers as the inputs for a for loop is great, many R users don’t realize that you can also use characters! This can be really useful if you have, for example, a dataset with many groups and you want to fit a linear regression for each level in your group column separately. To demonstrate this, we’ll use the penguins dataset included in the palmerpenguins R package.\nThe penguins dataset contains individual-level data on three penguin species (run ?penguins for more specific detail). Let’s say that we want to run compare the bill length between male and female penguins for each species. For simplicity’s sake, we’ll use a Student’s t-Test and extract only the p value.\n\n\n\n\n\n\nExample\n\n\n\n\n# Load the package\nlibrary(palmerpenguins)\n\n# For each species in the dataframe\nfor(sp in unique(penguins$species)){\n  \n  # Subset the data to the selected species and drop NAs in `sex`\n  data_sub <- subset(penguins, species == sp & !is.na(sex))\n  \n  # Now fit the t-test\n  stats <- t.test(data_sub$bill_length_mm ~ data_sub$sex)\n  \n  # And print the p-value!\n  message(\"For species \", sp, \" the p value is \", stats$p.value)\n}\n\nFor species Adelie the p value is 4.80108238442492e-15\n\n\nFor species Gentoo the p value is 1.31503894530191e-14\n\n\nFor species Chinstrap the p value is 8.91840858173204e-10\n\n\n\n\nThis can also be used to loop through the column names of a single dataframe or elements of a list! Supplying characters to a for loop can make the mental gymnastics of picturing your loop much simpler so definitely try this in your code!"
   },
   {
     "objectID": "data_bytes/file-naming.html",
@@ -39,42 +39,7 @@
     "href": "our-team.html",
     "title": "Our Team",
     "section": "",
-    "text": "njlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking “raw” field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University\nGoals: Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages."
-  },
-  {
-    "objectID": "our-team.html#althea-marks",
-    "href": "our-team.html#althea-marks",
-    "title": "Our Team",
-    "section": "Althea Marks",
-    "text": "Althea Marks\ntheamarks  – marks@nceas.ucsb.edu\n\nAlthea is a Data Science Fellow at the Arctic Data Center data repository. She is working on the “scythe” R package to improve the process of searching for dataset citations in scientific publication databases. Althea comes from an environmental science, water quality, and marine ecology background; she got the reproducible and open science bug while analyzing her graduate research and teaching herself to code.\nGoals for this website:\n\nWork collaboratively with many people using git/github\nLearn how to create a webpage populated by a different github repo\nDig deeper into Quarto formatting\nUse git in the command line for this website"
-  },
-  {
-    "objectID": "our-team.html#camila-vargas-poulsen",
-    "href": "our-team.html#camila-vargas-poulsen",
-    "title": "Our Team",
-    "section": "Camila Vargas Poulsen",
-    "text": "Camila Vargas Poulsen\n camilavargasp –  @CamVargasP – camilavargas@ucsb.edu\n\nCamila is working towards building the Palmyra Atoll Data Library (PADL). She serves as the data manager, rescuing data collected at Palmyra Atoll to document and publish these data packages into the Environmental Data Initiative repository (EDI). As a data and project manager, Camila enjoys developing efficient workflows for cleaning, organizing, and documenting data, making it ready to be analized and ensure long-term preservation. Camila holds a Masters in Environmental Science & Management from the Bren School at UCSB.\nData Science Tools: RStudio and Github\ndata-science-chats goals: Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.\nGoals for this website: Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work."
-  },
-  {
-    "objectID": "our-team.html#haley-epperly-fox",
-    "href": "our-team.html#haley-epperly-fox",
-    "title": "Our Team",
-    "section": "Haley (Epperly) Fox",
-    "text": "Haley (Epperly) Fox\nhaleyepperlyfox  – epperly@nceas.ucsb.edu\n\nHaley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.\nGoals for this website: Website goals include collaborating with others in Github, understanding and using more of Github’s capabilities, using the terminal to interact with Github, and learning more about Quarto’s capabilities."
-  },
-  {
-    "objectID": "our-team.html#daphne-virlar-knight",
-    "href": "our-team.html#daphne-virlar-knight",
-    "title": "Our Team",
-    "section": "Daphne Virlar-Knight",
-    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management."
-  },
-  {
-    "objectID": "our-team.html#angel-chen",
-    "href": "our-team.html#angel-chen",
-    "title": "Our Team",
-    "section": "Angel Chen",
-    "text": "Angel Chen\n angelchen7 – anchen@nceas.ucsb.edu\n\nAngel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.\nGoals for this website: Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!"
+    "text": "angelchen7 – anchen@nceas.ucsb.edu\n\nAngel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. She has recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.\nGoals for this website: Angel strives to learn more about how to collaborate with others using git/GitHub and Quarto. She also wants to practice documenting and sharing any useful tips, tricks, tools, and skills along the way!"
   },
   {
     "objectID": "our-team.html#samantha-csik",
@@ -82,6 +47,48 @@
     "title": "Our Team",
     "section": "Samantha Csik",
     "text": "Samantha Csik\nsamanthacsik.github.io –  samanthacsik –  @SamanthaCsik – scsik@ucsb.edu\n\nSam is the NCEAS Data Training Coordinator where she’s working to develop and teach data science training curricula for the Master of Environmental Data Science (MEDS) program and other data science initiatives across NCEAS and UCSB. She is also a co-organizer of R-Ladies Santa Barbara, a local data science group which works to promote diversity in the R community. In her spare time, you’ll typically find her hiking with her pup or cooking family dinners with friends.\ndata-science-chats goals: Learn with and from colleagues (everyone at NCEAS is seriously so cool, kind, and willing to share exciting data science knowledge). Also excited to break things 😈 and fix them 😇 together in a safe and supportive space — it’s always scary when things go awry in the middle of a project, but #data-science-chats has provided an awesome opportunity to do so in a (semi-)controlled way so that we can all learn workflows and strategies along the way.\nGoals for this website: Learn more about Quarto and compile all the fun tips and tricks in one easy-to-find spot — trying to find the motivation to blog more often, and this is a great place to start! Become more comfortable with git and the command line."
+  },
+  {
+    "objectID": "our-team.html#halina-do-linh",
+    "href": "our-team.html#halina-do-linh",
+    "title": "Our Team",
+    "section": "Halina Do-Linh",
+    "text": "Halina Do-Linh\nhdolinh.github.io –  hdolinh –  @hdolinh – do-linh@nceas.ucsb.edu\n\nHalina is the NCEAS Data Training Program Manager and maintains the NCEAS Learning Hub. She collaborates with programs like the Arctic Data Center and the LTER Network to support data scientists and researchers who want to grow their data science skills. She recently achieved a Masters in Environmental Data Science from the Bren School. In her free time, Halina is playing sudoku, going back n forth between books, and taking leisurely neighborhood walks.\ndata-science-chats goals: Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.\nGoals for this website: Practice Quarto. Collaborate using git and GitHub. Write a blog."
+  },
+  {
+    "objectID": "our-team.html#haley-epperly-fox",
+    "href": "our-team.html#haley-epperly-fox",
+    "title": "Our Team",
+    "section": "Haley (Epperly) Fox",
+    "text": "Haley (Epperly) Fox\n haleyepperlyfox – epperly@nceas.ucsb.edu\n\nHaley is a Data Scientist at the National Center for Ecological Analysis and Synthesis (NCEAS). She is working on a collaborative and interdisciplinary project focused on the environmental justice implications of global food trade. Haley has a M.Sc. in Interdisciplinary Ecology from the School of Natural Resources and the Environment at University of Florida. In addition to lots of ecological fieldwork and analysis, Haley also spent four years working for the Oregon Department of Fish and Wildlife understanding how people have been impacted by marine reserves.\nGoals for this website: Website goals include collaborating with others in Github, understanding and using more of Github’s capabilities, using the terminal to interact with Github, and learning more about Quarto’s capabilities."
+  },
+  {
+    "objectID": "our-team.html#nick-lyon",
+    "href": "our-team.html#nick-lyon",
+    "title": "Our Team",
+    "section": "Nick Lyon",
+    "text": "Nick Lyon\nnjlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick focuses on supporting LTER synthesis working groups in the acquisition and management prerequisite to analysis and visualization. Nick is a trained community ecologist with a special interest in interacting communities of plants and insects and has extensive experience taking “raw” field-collected data and readying it for hypothesis testing in a rigorous, transparent way. Nick completed his M.Sc. in Ecology and Evolutionary Biology at Iowa State University\nGoals: Nick aims to refine his R package writing skills and become a more well-rounded programmer by increasing his competency with non-R programming languages."
+  },
+  {
+    "objectID": "our-team.html#althea-marks",
+    "href": "our-team.html#althea-marks",
+    "title": "Our Team",
+    "section": "Althea Marks",
+    "text": "Althea Marks\n theamarks – marks@nceas.ucsb.edu\n\nAlthea is a Data Science Fellow at the Arctic Data Center data repository. She is working on the “scythe” R package to improve the process of searching for dataset citations in scientific publication databases. Althea comes from an environmental science, water quality, and marine ecology background; she got the reproducible and open science bug while analyzing her graduate research and teaching herself to code.\nGoals for this website:\n\nWork collaboratively with many people using git/github\nLearn how to create a webpage populated by a different github repo\nDig deeper into Quarto formatting\nUse git in the command line for this website"
+  },
+  {
+    "objectID": "our-team.html#camila-vargas-poulsen",
+    "href": "our-team.html#camila-vargas-poulsen",
+    "title": "Our Team",
+    "section": "Camila Vargas Poulsen",
+    "text": "Camila Vargas Poulsen\n camilavargasp –  – camilavargas@ucsb.edu\n\nCamila is working towards building the Palmyra Atoll Data Library (PADL). She serves as the data manager, rescuing data collected at Palmyra Atoll to document and publish these data packages into the Environmental Data Initiative repository (EDI). As a data and project manager, Camila enjoys developing efficient workflows for cleaning, organizing, and documenting data, making it ready to be analized and ensure long-term preservation. Camila holds a Masters in Environmental Science & Management from the Bren School at UCSB.\nData Science Tools: RStudio and Github\ndata-science-chats goals: Learn new tools and packages. Staying abreast of best practices for open data science. Practice teaching data science tools. Support each other in our data science journey.\nGoals for this website: Get familiar with Quarto. Use Github collaboratively. Learn from each other things we discover along the process of creating this website. Create a website that host small data science sparks from our day to day work."
+  },
+  {
+    "objectID": "our-team.html#daphne-virlar-knight",
+    "href": "our-team.html#daphne-virlar-knight",
+    "title": "Our Team",
+    "section": "Daphne Virlar-Knight",
+    "text": "Daphne Virlar-Knight\ndvirlar.com –  dvirlar2 –  @dvirlar2 – virlar-knight@nceas.ucsb.edu\n\nDaphne helps curate metadata for every dataset submitted to the National Science Foundation’s Arctic Data Center, the primary data and software repository for the Arctic section of the Office of Polar Programs. While Daphne’s background is in conservation, environmental science, and management, that experience coalesces around the principles of open data science and reproducibility. Daphne received a master’s degree from the Bren School of Environmental Science & Management."
   },
   {
     "objectID": "index.html",
@@ -103,11 +110,5 @@
     "title": "Data Recipes",
     "section": "",
     "text": "Data Recipes are similar to Data Bytes but tend to focus on longer or more nuanced coding tutorials or explanations. This page will also grow as we develop recipes so check back to make sure you see our recipes as we create them! If you have an idea for a recipe, Post an Issue on our GitHub repository and we can add it to our list."
-
-    "objectID": "our-team.html#halina-do-linh",
-    "href": "our-team.html#halina-do-linh",
-    "title": "Our Team",
-    "section": "Halina Do-Linh",
-    "text": "Halina Do-Linh\nhdolinh.github.io –  hdolinh –  @hdolinh – do-linh@nceas.ucsb.edu\n\nHalina is the NCEAS Data Training Program Manager and maintains the NCEAS Learning Hub. She collaborates with programs like the Arctic Data Center and the LTER Network to support data scientists and researchers who want to grow their data science skills. She recently achieved a Masters in Environmental Data Science from the Bren School. In her free time, Halina is playing sudoku, going back n forth between books, and taking leisurely neighborhood walks.\ndata-science-chats goals: Become familiar with and participate in collaborative data science groups. Learn more about R and python because ultimately, we know nothing. Improve vocabulary and communication about data science and coding. Create a package. Learn more data viz.\nGoals for this website: Practice Quarto. Collaborate using git and GitHub. Write a blog."
   }
 ]
